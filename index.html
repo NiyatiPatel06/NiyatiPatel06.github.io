@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <title>Your Web Developer Portfolio</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="profile-image.jpg" alt="Your Name">
+        <h1>Software Engineer</h1>
+        <nav>
+            <a href="resume.pdf" download class="resume-button">Resume</a>
+            <a href="#contact" class="contact-button">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="infographic">
+        <div>
+            <h2>Personal Information</h2>
+            <p><strong>Email: </strong>niyati.kanak@gmail.com</p>
+            <p><strong>LinkedIn: </strong>www.linkedin.com/in/niyati-patel06 </p>
+            <p><strong>Course: </strong>Web Programming Principles</p>
+            <p><strong>Your Section:</strong> NAA</p>
+            <p><strong>Professor's Name:</strong> Mark Meritt</p>
+            
+            <p class="honesty-statement"><strong>Seneca Honesty Statement:</strong> <em> I declare that my assessment is wholy my own work in accordance with Seneca Academic Policy. 
+                No part of this assessment has been copied manually or electronically from any other source 
+                (including web sites) except for the information supplied by the WEB222 instructors and / or 
+                made available in this assessment for my use. I also declare that no part of this assignment has 
+                been distributed to other students.</em></p>
+            <p><strong>Date:</strong> August 17, 2023</p>
+
+        </div>
+    </section>
+
+    <section class="education">
+        <h3>Education</h3>
+        <div class="education-item-container">
+            <div class="education-bold">
+                <p class="education-school">IITE Gandhinagar</p>
+                <p class="education-year">(2017 - 2021)</p>
+            </div>
+            <div class="education-details">
+                <p class="education-degree">Bachelor of Science in Mathematics</p>
+            </div>
+        </div>
+        <div class="education-item-container">
+            <div class="education-bold">
+                <p class="education-school">Seneca College</p>   
+                <p class="education-year">(2023 - Present)</p>    
+            </div>
+            <div class="education-details">
+                <p class="education-degree">Diploma in Computer Programming(CPP)</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h4>Contact Me</h4>
+        <form action="https://httpbin.org/post" method="post" id="contact-form">
+            <!-- Contact form fields go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cities" required>
+            <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Vancouver"></option>
+                <!-- Add more city options here -->
+            </datalist>
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal_code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+
+            <fieldset>
+                <legend>What is this about?</legend>
+                <label><input type="radio" name="topic" value="Question" required>Question</label>
+                <label><input type="radio" name="topic" value="Comment" required>Comment</label>
+                <label><input type="radio" name="topic" value="Hiring" required>Hiring</label>
+            </fieldset>
+
+            <div id="hourly-rate-container">
+                <label for="hourly-rate">Hourly Rate:</label>
+                <input type="number" id="hourly-rate" name="hourly_rate">
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Niyati Patel. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
