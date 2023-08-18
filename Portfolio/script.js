@@ -1,14 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hiringRadio = document.getElementById('hiring');
+    const hiringRadio = document.querySelector('input[name="topic"][value="Hiring"]');
     const hourlyRateContainer = document.getElementById('hourly-rate-container');
     const hourlyRateInput = document.getElementById('hourly-rate');
+    const questionRadio = document.querySelector('input[name="topic"][value="Question"]');
+    const commentRadio = document.querySelector('input[name="topic"][value="Comment"]');
+
+    function resetHourlyRateInput() {
+        hourlyRateContainer.style.display = 'none';
+        hourlyRateInput.value = '';
+    }
 
     hiringRadio.addEventListener('change', function() {
-        hourlyRateContainer.style.display = hiringRadio.checked ? 'block' : 'none';
-        if (!hiringRadio.checked) {
-            hourlyRateInput.value = ''; // Reset the hourly rate input value
+        if (hiringRadio.checked) {
+            hourlyRateContainer.style.display = 'block';
+        } else {
+            resetHourlyRateInput();
         }
     });
+
+    questionRadio.addEventListener('change', resetHourlyRateInput);
+    commentRadio.addEventListener('change', resetHourlyRateInput);
 
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', function(event) {

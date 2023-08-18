@@ -32,7 +32,7 @@ h1 {
     color: #ad1457;
     font-size: 28px;
     margin-bottom: 20px;
-    font-family: "Georgia", serif; /* Set the font family */
+    font-family: "Georgia", serif; /* Sets the font family */
     font-weight: bold; /* Set font weight to bold */
     font-style: italic; /* Set font style to italic */
 }
@@ -40,7 +40,14 @@ h2,h3,h4 {
     color: #ad1457;
     font-size: 28px;
     margin-bottom: 20px;
-    font-family: "Georgia", serif; /* Set the font family */
+    font-family: "Georgia", serif; /* Sets the font family */
+    font-weight: bold; /* Set font weight to bold */
+    font-style: italic; /* Set font style to italic */
+}
+h5 {
+    color: #ad1457;
+    margin-bottom: 20px;
+    font-family: "Georgia", serif; /* Sets the font family */
     font-weight: bold; /* Set font weight to bold */
     font-style: italic; /* Set font style to italic */
 }
@@ -56,8 +63,8 @@ h2,h3,h4 {
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
     background-color: #e6e4e4;
-    width: auto; /* Adjust the width to your preference */
-    height: auto; /* Adjust the height to your preference */
+    width: auto; 
+    height: auto;
    
     padding: 17px 17% 0;
     margin-bottom: 20px;
@@ -76,8 +83,8 @@ h2,h3,h4 {
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
     background-color: #e6e4e4;
-    width: auto; /* Adjust the width to your preference */
-    height: auto; /* Adjust the height to your preference */
+    width: auto; 
+    height: auto; 
    
     padding: 17px 17% 0;
     margin-bottom: 20px;
@@ -94,8 +101,8 @@ h2,h3,h4 {
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
     background-color: #e6e4e4;
-    width: auto; /* Adjust the width to your preference */
-    height: 960px; /* Adjust the height to your preference */
+    width: auto; 
+    height: 960px; 
    
     padding: 17px 17% 0;
     margin-bottom: 20px;
@@ -125,7 +132,7 @@ button:hover {
 }
 
 header img {
-    width: 100px; /* Adjust this value to your desired width */
+    width: 100px; 
     height: auto; /* This ensures the aspect ratio is maintained */
     border: 2px solid #880e4f; /* Add a border to the image */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -139,12 +146,12 @@ header {
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
     background-color: #e6e4e4;
-    width: auto; /* Adjust the width to your preference */
-    height: 300px; /* Adjust the height to your preference */
+    width: auto; 
+    height: 300px; 
    
     padding: 17px 17% 0;
     margin-bottom: 20px;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17); /* Add padding for spacing if needed */
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17); 
 }
 
 /* Styling for "Contact Me" button */
@@ -249,4 +256,9 @@ header {
     padding: 20px;
     background-color: #FFFFFF; /* Background color for the details section */
     color: #333;
+}
+
+.contact fieldset label {
+    display: inline-block;
+    margin-right: 20px;
 }
